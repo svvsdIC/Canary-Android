@@ -1,2 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <!--Although replace the vendor and product ID's with Xbee values-->
+    <!--<usb-device vendor-id="1240" product-id="223" />-->
+</resources>

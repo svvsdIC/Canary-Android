@@ -1,5 +1,6 @@
 package com.example.reitzig_axel.prototype2;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.database.Cursor;
@@ -10,6 +11,9 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import java.util.HashMap;
 import android.util.Log;
+import android.view.View;
+
+import com.digi.xbee.api.connection.android.AndroidXBeeInterface;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -51,6 +55,34 @@ public class MainActivity extends AppCompatActivity {
         HashMap<String, UsbDevice> deviceList = manager.getDeviceList();
         UsbDevice device = deviceList.get("deviceName");
         System.out.println("jimusb " + deviceList.toString());
+
+        AndroidXBeeInterface xBeeInterface = new AndroidXBeeInterface(getApplicationContext(), 9600, device);
+        xBeeInterface.close();
+
+        /*
+        try
+        {
+            xBeeInterface.open();
+            byte[] buffer = new byte[1024];
+            int len;
+
+            //msg("embedBitmap processing input stream");
+            while ((len = xBeeInterface.readData(buffer)) > 0)
+            {
+
+                for (int i = 0; i < len; i++)
+                {
+                    // process data reading in
+
+                }
+            }
+            xBeeInterface.close();
+        }
+        catch (Exception e)
+        {
+            // code to debug and handle errors
+        }
+        */
 
 
         //mUsbReceiver.getResultCode(); // FILLER LINE TO RESOLVE AN ERROR---REPLACE LATER

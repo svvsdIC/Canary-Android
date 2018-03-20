@@ -1,10 +1,10 @@
 [
     {
-        "merged": "D:\\AndroidStudioProjects\\JimCode\\Prototype2\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
-        "source": "C:\\Users\\reitzig_axel\\.android\\build-cache\\acbf82b45cadb5a27dae36fe54056d9e8ff71eda\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
+        "merged": "/Users/michelletran/InnovationCenter/Canary-Android/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/michelletran/.android/build-cache/7edcf3f469d89ddbed95ec7ff399f50f7cef51b9/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\JimCode\\Prototype2\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
-        "source": "C:\\Users\\reitzig_axel\\.android\\build-cache\\acbf82b45cadb5a27dae36fe54056d9e8ff71eda\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
+        "merged": "/Users/michelletran/InnovationCenter/Canary-Android/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/michelletran/.android/build-cache/7edcf3f469d89ddbed95ec7ff399f50f7cef51b9/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
     }
 ]

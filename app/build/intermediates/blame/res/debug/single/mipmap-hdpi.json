@@ -1,10 +1,10 @@
 [
     {
-        "merged": "D:\\AndroidStudioProjects\\JimCode\\Prototype2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
-        "source": "D:\\AndroidStudioProjects\\JimCode\\Prototype2\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "/Users/michelletran/InnovationCenter/Canary-Android/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
+        "source": "/Users/michelletran/InnovationCenter/Canary-Android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\JimCode\\Prototype2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher_round.png",
-        "source": "D:\\AndroidStudioProjects\\JimCode\\Prototype2\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "/Users/michelletran/InnovationCenter/Canary-Android/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher_round.png",
+        "source": "/Users/michelletran/InnovationCenter/Canary-Android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
     }
 ]

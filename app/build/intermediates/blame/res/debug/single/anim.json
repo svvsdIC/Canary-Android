@@ -1,66 +1,66 @@
 [
     {
-        "merged": "D:\\AndroidStudioProjects\\JimCode\\Prototype2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
-        "source": "C:\\Users\\reitzig_axel\\.android\\build-cache\\acbf82b45cadb5a27dae36fe54056d9e8ff71eda\\output\\res\\anim\\abc_popup_exit.xml"
+        "merged": "/Users/michelletran/InnovationCenter/Canary-Android/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/michelletran/.android/build-cache/7edcf3f469d89ddbed95ec7ff399f50f7cef51b9/output/res/anim/abc_slide_in_bottom.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\JimCode\\Prototype2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
-        "source": "C:\\Users\\reitzig_axel\\.android\\build-cache\\acbf82b45cadb5a27dae36fe54056d9e8ff71eda\\output\\res\\anim\\abc_fade_out.xml"
+        "merged": "/Users/michelletran/InnovationCenter/Canary-Android/app/build/intermediates/res/merged/debug/anim/design_fab_out.xml",
+        "source": "/Users/michelletran/.android/build-cache/b8710f735346b6bddd446046ee03dc6e991cb6b1/output/res/anim/design_fab_out.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\JimCode\\Prototype2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
-        "source": "C:\\Users\\reitzig_axel\\.android\\build-cache\\acbf82b45cadb5a27dae36fe54056d9e8ff71eda\\output\\res\\anim\\abc_slide_in_top.xml"
+        "merged": "/Users/michelletran/InnovationCenter/Canary-Android/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/Users/michelletran/.android/build-cache/7edcf3f469d89ddbed95ec7ff399f50f7cef51b9/output/res/anim/abc_slide_in_top.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\JimCode\\Prototype2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_in.xml",
-        "source": "C:\\Users\\reitzig_axel\\.android\\build-cache\\f012e389870c952bdce3c3b8141319729c9cd11e\\output\\res\\anim\\design_snackbar_in.xml"
+        "merged": "/Users/michelletran/InnovationCenter/Canary-Android/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/michelletran/.android/build-cache/7edcf3f469d89ddbed95ec7ff399f50f7cef51b9/output/res/anim/abc_grow_fade_in_from_bottom.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\JimCode\\Prototype2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
-        "source": "C:\\Users\\reitzig_axel\\.android\\build-cache\\acbf82b45cadb5a27dae36fe54056d9e8ff71eda\\output\\res\\anim\\abc_popup_enter.xml"
+        "merged": "/Users/michelletran/InnovationCenter/Canary-Android/app/build/intermediates/res/merged/debug/anim/design_snackbar_out.xml",
+        "source": "/Users/michelletran/.android/build-cache/b8710f735346b6bddd446046ee03dc6e991cb6b1/output/res/anim/design_snackbar_out.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\JimCode\\Prototype2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_in.xml",
-        "source": "C:\\Users\\reitzig_axel\\.android\\build-cache\\f012e389870c952bdce3c3b8141319729c9cd11e\\output\\res\\anim\\design_fab_in.xml"
+        "merged": "/Users/michelletran/InnovationCenter/Canary-Android/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/Users/michelletran/.android/build-cache/7edcf3f469d89ddbed95ec7ff399f50f7cef51b9/output/res/anim/abc_slide_out_top.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\JimCode\\Prototype2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
-        "source": "C:\\Users\\reitzig_axel\\.android\\build-cache\\acbf82b45cadb5a27dae36fe54056d9e8ff71eda\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+        "merged": "/Users/michelletran/InnovationCenter/Canary-Android/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/michelletran/.android/build-cache/7edcf3f469d89ddbed95ec7ff399f50f7cef51b9/output/res/anim/abc_slide_out_bottom.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\JimCode\\Prototype2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_bottom_sheet_slide_in.xml",
-        "source": "C:\\Users\\reitzig_axel\\.android\\build-cache\\f012e389870c952bdce3c3b8141319729c9cd11e\\output\\res\\anim\\design_bottom_sheet_slide_in.xml"
+        "merged": "/Users/michelletran/InnovationCenter/Canary-Android/app/build/intermediates/res/merged/debug/anim/design_fab_in.xml",
+        "source": "/Users/michelletran/.android/build-cache/b8710f735346b6bddd446046ee03dc6e991cb6b1/output/res/anim/design_fab_in.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\JimCode\\Prototype2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
-        "source": "C:\\Users\\reitzig_axel\\.android\\build-cache\\acbf82b45cadb5a27dae36fe54056d9e8ff71eda\\output\\res\\anim\\abc_slide_in_bottom.xml"
+        "merged": "/Users/michelletran/InnovationCenter/Canary-Android/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_out.xml",
+        "source": "/Users/michelletran/.android/build-cache/b8710f735346b6bddd446046ee03dc6e991cb6b1/output/res/anim/design_bottom_sheet_slide_out.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\JimCode\\Prototype2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
-        "source": "C:\\Users\\reitzig_axel\\.android\\build-cache\\acbf82b45cadb5a27dae36fe54056d9e8ff71eda\\output\\res\\anim\\abc_slide_out_bottom.xml"
+        "merged": "/Users/michelletran/InnovationCenter/Canary-Android/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/Users/michelletran/.android/build-cache/7edcf3f469d89ddbed95ec7ff399f50f7cef51b9/output/res/anim/abc_fade_in.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\JimCode\\Prototype2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
-        "source": "C:\\Users\\reitzig_axel\\.android\\build-cache\\acbf82b45cadb5a27dae36fe54056d9e8ff71eda\\output\\res\\anim\\abc_fade_in.xml"
+        "merged": "/Users/michelletran/InnovationCenter/Canary-Android/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/Users/michelletran/.android/build-cache/7edcf3f469d89ddbed95ec7ff399f50f7cef51b9/output/res/anim/abc_fade_out.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\JimCode\\Prototype2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
-        "source": "C:\\Users\\reitzig_axel\\.android\\build-cache\\acbf82b45cadb5a27dae36fe54056d9e8ff71eda\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+        "merged": "/Users/michelletran/InnovationCenter/Canary-Android/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_in.xml",
+        "source": "/Users/michelletran/.android/build-cache/b8710f735346b6bddd446046ee03dc6e991cb6b1/output/res/anim/design_bottom_sheet_slide_in.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\JimCode\\Prototype2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_bottom_sheet_slide_out.xml",
-        "source": "C:\\Users\\reitzig_axel\\.android\\build-cache\\f012e389870c952bdce3c3b8141319729c9cd11e\\output\\res\\anim\\design_bottom_sheet_slide_out.xml"
+        "merged": "/Users/michelletran/InnovationCenter/Canary-Android/app/build/intermediates/res/merged/debug/anim/design_snackbar_in.xml",
+        "source": "/Users/michelletran/.android/build-cache/b8710f735346b6bddd446046ee03dc6e991cb6b1/output/res/anim/design_snackbar_in.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\JimCode\\Prototype2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
-        "source": "C:\\Users\\reitzig_axel\\.android\\build-cache\\acbf82b45cadb5a27dae36fe54056d9e8ff71eda\\output\\res\\anim\\abc_slide_out_top.xml"
+        "merged": "/Users/michelletran/InnovationCenter/Canary-Android/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/michelletran/.android/build-cache/7edcf3f469d89ddbed95ec7ff399f50f7cef51b9/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\JimCode\\Prototype2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_out.xml",
-        "source": "C:\\Users\\reitzig_axel\\.android\\build-cache\\f012e389870c952bdce3c3b8141319729c9cd11e\\output\\res\\anim\\design_snackbar_out.xml"
+        "merged": "/Users/michelletran/InnovationCenter/Canary-Android/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/Users/michelletran/.android/build-cache/7edcf3f469d89ddbed95ec7ff399f50f7cef51b9/output/res/anim/abc_popup_exit.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\JimCode\\Prototype2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_out.xml",
-        "source": "C:\\Users\\reitzig_axel\\.android\\build-cache\\f012e389870c952bdce3c3b8141319729c9cd11e\\output\\res\\anim\\design_fab_out.xml"
+        "merged": "/Users/michelletran/InnovationCenter/Canary-Android/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/Users/michelletran/.android/build-cache/7edcf3f469d89ddbed95ec7ff399f50f7cef51b9/output/res/anim/abc_popup_enter.xml"
     }
 ]

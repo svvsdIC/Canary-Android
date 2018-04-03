@@ -57,9 +57,7 @@ public class MainActivity extends AppCompatActivity {
         System.out.println("jimusb " + deviceList.toString());
 
         AndroidXBeeInterface xBeeInterface = new AndroidXBeeInterface(getApplicationContext(), 9600, device);
-        xBeeInterface.close();
 
-        /*
         try
         {
             xBeeInterface.open();
@@ -82,7 +80,6 @@ public class MainActivity extends AppCompatActivity {
         {
             // code to debug and handle errors
         }
-        */
 
 
         //mUsbReceiver.getResultCode(); // FILLER LINE TO RESOLVE AN ERROR---REPLACE LATER

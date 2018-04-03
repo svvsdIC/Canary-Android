@@ -76,6 +76,7 @@ MERGED from [com.android.support:support-media-compat:25.3.1] /Users/michelletra
 MERGED from [com.android.support:support-core-ui:25.3.1] /Users/michelletran/.android/build-cache/fe1a3c3e98804f6ca1f474e9f2eaa9efac92470a/output/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-utils:25.3.1] /Users/michelletran/.android/build-cache/d6ca4837f902a8bba85eaf704b78f76ef5e731aa/output/AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:support-compat:25.3.1] /Users/michelletran/.android/build-cache/9f0c46f31ccd0c838b8840cb13b8860d08abda37/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:multidex:1.0.1] /Users/michelletran/.android/build-cache/d2b63c4b448477e97f22ffd2df9ad846ed0e30c9/output/AndroidManifest.xml:18:5-42
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:25.3.1] /Users/michelletran/.android/build-cache/b8710f735346b6bddd446046ee03dc6e991cb6b1/output/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion

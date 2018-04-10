@@ -71,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
                 for (int i = 0; i < len; i++)
                 {
                     // process data reading in
+                    System.out.println("Got Data");
 
                 }
             }

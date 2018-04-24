@@ -12,6 +12,8 @@ import android.content.Context;
 import java.util.HashMap;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
+
 
 import com.digi.xbee.api.connection.android.AndroidXBeeInterface;
 
@@ -55,6 +57,8 @@ public class MainActivity extends AppCompatActivity {
         HashMap<String, UsbDevice> deviceList = manager.getDeviceList();
         UsbDevice device = deviceList.get("deviceName");
         System.out.println("jimusb " + deviceList.toString());
+        TextView devicetextView = (TextView) findViewById(R.id.mytextview);
+        devicetextView.setText("device list " + deviceList.toString());
 
         AndroidXBeeInterface xBeeInterface = new AndroidXBeeInterface(getApplicationContext(), 9600, device);
 
@@ -71,7 +75,9 @@ public class MainActivity extends AppCompatActivity {
                 for (int i = 0; i < len; i++)
                 {
                     // process data reading in
-                    System.out.println("Got Data");
+                    //System.out.println("Got Data");
+                    TextView textView = (TextView) findViewById(R.id.mytextview);
+                    textView.setText("got data");
 
                 }
             }
@@ -80,7 +86,11 @@ public class MainActivity extends AppCompatActivity {
         catch (Exception e)
         {
             // code to debug and handle errors
+            System.out.println("problem: " + e);
+            TextView textView = (TextView) findViewById(R.id.mytextview);
+            textView.setText("problem: " + e);
         }
+        System.out.println("Done reading data");
 
 
         //mUsbReceiver.getResultCode(); // FILLER LINE TO RESOLVE AN ERROR---REPLACE LATER

@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
             while ((len = xBeeInterface.readData(buffer)) > 0)
             {
 
-                for (int i = 0; i < len; i++) // Search up how ot get device connected
+                for (int i = 0; i < len; i++)
                 {
                     // process data reading in
                     //System.out.println("Got Data");

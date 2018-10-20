@@ -1,5 +1,9 @@
 <resources>
-    <string name="app_name">Prototype2</string>
-    <string name="action_settings">Settings</string>
-    <string name="jimtext">Click here to begin</string>
+    <string name="app_name">Canary</string>
+    <string name="no_record_no_xbee_hint">Unable to record. Make sure XBee is attached.</string>
+    <string name="no_data_yet">No data yet</string>
+    <string name="data_recorded">data recorded</string>
+    <string name="data_uploaded">data uploaded</string>
+    <string name="data_erased">Date erased</string>
+    <string name="pick_app_open_data">Pick an app to open the data with</string>
 </resources>

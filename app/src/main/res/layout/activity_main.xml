@@ -1,33 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.reitzig_axel.prototype2.MainActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white" >
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    <RelativeLayout
+        android:id="@+id/controlbuttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
 
-    </android.support.design.widget.AppBarLayout>
+        <ImageView
+            android:id="@+id/recordButton"
+            android:layout_width="60dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="4dp"
+            android:onClick="toggleRecord"
+            android:src="@drawable/record" />
 
-    <include layout="@layout/content_main" />
+        <ImageView
+            android:id="@+id/uploadButton"
+            android:layout_width="60dp"
+            android:layout_height="72dp"
+            android:layout_alignParentRight="true"
+            android:onClick="toggleUpload"
+            android:src="@drawable/upload" />
+    </RelativeLayout>
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
+    <RelativeLayout
+        android:id="@+id/count_fields"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/datacount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="datacount" />
+
+        <TextView
+            android:id="@+id/uploadcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="uploadcount" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/count_explanation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/datacountexplanation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/data_recorded" />
+
+        <TextView
+            android:id="@+id/uploadcountexplanation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/data_uploaded" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/testfield"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        android:layout_gravity="center_horizontal"
+        android:text="@string/no_data_yet" />
 
-</android.support.design.widget.CoordinatorLayout>
+
+    <ImageView
+        android:id="@+id/deleteButton"
+        android:layout_width="60dp"
+        android:layout_height="72dp"
+        android:onClick="deleteData"
+        android:src="@drawable/delete" />
+
+
+
+</LinearLayout>
+
+
+

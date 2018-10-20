@@ -1,36 +1,27 @@
-apply plugin: 'com.android.application'
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
 
-android {
-    compileSdkVersion 25
-    buildToolsVersion "27.0.1"
-    defaultConfig {
-        applicationId "com.example.reitzig_axel.prototype2"
-        minSdkVersion 15
-        multiDexEnabled true // multidex
-        targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
     }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+        
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
     }
 }
 
-dependencies {
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
 
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.android.support:design:25.3.1'
-    //compile 'com.android.support:appcompat-v7:25.0.0' // COME BACK
-    compile 'com.android.support:multidex:1.0.0' // added to enable multidex
-    testCompile 'junit:junit:4.12'
-    compile files('libs/xbee-java-library-1.2.1.jar')
-    compile files('libs/slf4j-api-1.7.12.jar')
+task clean(type: Delete) {
+    delete rootProject.buildDir
 }

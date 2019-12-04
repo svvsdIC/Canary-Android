@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.digi.xbee.api.connection.android.AndroidXBeeInterface;
 
+import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -179,8 +180,53 @@ public class Receiver
         //   Field names should be the same as Recorder database column names you want to record the values to
         //   Field names should be the same as the monitor field names for monitoring
         ContentValues contentValues = new ContentValues();
-        String[] aSplit = sData.split(",");
-        contentValues.put("testfield", aSplit[0]);
+        sData = sData.replaceAll("[^0-9|.,]", "");
+        DebugUtils.msg("sData at processData is " + sData);
+        //make sure the data starts at the right point
+        String[] dataSplit = sData.split("[|]+");
+        //locate start of string
+        contentValues.put("testfield", ("full data" + sData));
+        for(int i = 0; i<4; i++)
+        {
+            String[] sensorSplit = dataSplit[i].split(",");
+            if(sensorSplit[0].contentEquals("1"))
+            {
+                //sensorID 1
+                contentValues.put("temperature", Float.parseFloat(sensorSplit[1]));
+                contentValues.put("pressure", Integer.parseInt(sensorSplit[2]));
+                contentValues.put("humidity", Integer.parseInt(sensorSplit[3]));
+            }
+            else if(sensorSplit[0].contentEquals("2"))
+            {
+                //sensorID 2
+                contentValues.put("CO", Integer.parseInt(sensorSplit[1]));
+                contentValues.put("H2", Integer.parseInt(sensorSplit[2]));
+                contentValues.put("NH4", Integer.parseInt(sensorSplit[3]));
+                contentValues.put("CH4", Integer.parseInt(sensorSplit[4]));
+                contentValues.put("O3", Integer.parseInt(sensorSplit[5]));
+            }
+            else if(sensorSplit[0].contentEquals("3"))
+            {
+                //semsorID 3
+                contentValues.put("Lidar", Integer.parseInt(sensorSplit[1]));
+            }
+            else if(sensorSplit[0].contentEquals("4"))
+            {
+                if(sensorSplit.length>1) {
+                    contentValues.put("Latitude", Float.parseFloat(sensorSplit[1]));
+                    contentValues.put("Longitude", Float.parseFloat(sensorSplit[2]));
+                    contentValues.put("Altitude", Float.parseFloat(sensorSplit[3]));
+                }
+                else {
+                    contentValues.put("Latitude", "-1");
+                    contentValues.put("Longitude", "-1");
+                    contentValues.put("Altitude", "-1");
+                }
+            }
+            DebugUtils.msg("contentValues() data parsed is" + contentValues.toString());
+        }
+
+
 
         lastProcessedData = contentValues;
 
@@ -289,6 +335,7 @@ public class Receiver
     //    When done processing the data, getXBeeDataTask returns to main UI thread (onPostExecute()), and ends with a call to scheduleCheckForData() to set up the next check for data run before ending the task
     private class getXBeeDataTask extends AsyncTask<AndroidXBeeInterface, Void, String>
     {
+        private int usefulLength = 0;
         @Override
         protected String doInBackground(AndroidXBeeInterface... xbee)
         {
@@ -300,7 +347,8 @@ public class Receiver
             }
             else
             {
-
+                String sData = "";
+                ContentValues processedData = new ContentValues();
                 try
                 {
                     if (!myXBeeInterface.isOpen())
@@ -309,25 +357,29 @@ public class Receiver
                     }
                     byte[] buffer = new byte[1024];
                     int iLength;
-                    String sData = "";
-                    ContentValues processedData = new ContentValues();
+
+
+
                     //       DebugUtils.msg("getXBeeDataTask doInBackground() reading XBee data");
                     while ((iLength = myXBeeInterface.readData(buffer)) > 0)
                     {
-                        DebugUtils.msg("getXBeeDataTask doInBackground() read data length " + iLength);
-                        sData = new String(buffer);
-                        DebugUtils.msg("getXBeeDataTask doInBackground() data is " + sData);
-                        processedData = processData(sData);
-                        if (bRecording && processedData.size() > 0) // need to record and have good data
-                        {
-                            recorder.recordData(processedData);
-                        }
-
+                        usefulLength = usefulLength + iLength;
+                        DebugUtils.msg("getXBeeDataTask doInBackground() read data length " + usefulLength);
+                        sData = sData + new String(buffer,0,iLength); //just keep adding to sData until we reset it
+//                        sData = new String(buffer);
+                        DebugUtils.msg("getXBeeDataTask doInBackground() data is before change " + sData);
                     }
+
                 }
                 catch (Exception e)
                 {
                     //         DebugUtils.msg("getXBeeDataTask doInBackground() problem getting XBee data " + e.toString());
+                }
+                if(sData.length()>0){
+                    processedData = processData(sData);}
+                if (bRecording && processedData.size() > 0) // need to record and have good data
+                {
+                    recorder.recordData(processedData);
                 }
             }
             return "OK";

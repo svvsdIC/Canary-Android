@@ -153,8 +153,9 @@ public class Recorder
             // table to record data and keep track of what has been uploaded
             //   only required is dataId (primary key, automatically generated, you do not set) and uploaded (timestamp), which are used for uploading data
             //   column names should be the same name as the field names you plan on uploading, and the same names as the receiver process data and receiver monitors
-            // TODO:  Need to add the column field names for the actual canary data. For values with decimals use type REAL.
-            db.execSQL("CREATE TABLE IF NOT EXISTS canarydata (dataId INTEGER PRIMARY KEY AUTOINCREMENT, uploaded INTEGER, testfield TEXT)");
+            db.execSQL("CREATE TABLE IF NOT EXISTS canarydata (dataId INTEGER PRIMARY KEY AUTOINCREMENT, uploaded INTEGER, testfield TEXT, " +
+                    "temperature REAL, pressure INTEGER, humidity INTEGER, CO INTEGER, H2 INTEGER, NH4 INTEGER, CH4 INTEGER, O3 INTEGER, " +
+                    "Lidar INTEGER, Latitude REAL, Longitude REAL, Altitude REAL, Timestamp DATETIME DEFAULT CURRENT_TIMESTAMP)");
         }
 
 

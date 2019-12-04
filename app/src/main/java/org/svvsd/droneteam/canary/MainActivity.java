@@ -101,7 +101,12 @@ public class MainActivity extends AppCompatActivity
         // an example: receiver.processData() sets a field "testfield".
         // this line adds the testfield UI textfield to be filled in with the latest testfield value
         // TODO: 10/20/18 Add monitors for all the XBee data so you can see it as it comes in
-        receiver.addMonitor("testfield", (TextView) findViewById(R.id.testfield));
+        receiver.addMonitor("O3", (TextView) findViewById(R.id.Ozone));
+        receiver.addMonitor("H2", (TextView) findViewById(R.id.hydrogen));
+        receiver.addMonitor("NH4", (TextView) findViewById(R.id.ammmonia));
+        receiver.addMonitor("CO", (TextView) findViewById(R.id.co));
+        receiver.addMonitor("CH4", (TextView) findViewById(R.id.methane));
+
 
 
         // a little test code to test out data when there is no XBee to receive data

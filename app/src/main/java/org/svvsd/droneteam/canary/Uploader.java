@@ -8,6 +8,7 @@ import java.io.BufferedInputStream;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.net.URLEncoder;
 import java.text.NumberFormat;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -157,8 +158,10 @@ public class Uploader
                 {
                     DebugUtils.msg("key is " + sKey);
                     sValue = contentValues.getAsString(sKey);
-                    if (sValue.length() > 0) // have some data value to send
+                    if (sValue.length()>0) // have some data value to send
                     {
+                        if(sContentValues.length()>0)
+                            sContentValues += "&";
                         sContentValues += sKey + "=" + sValue;
                     }
                 }
@@ -170,7 +173,7 @@ public class Uploader
                 // convert to real url
                 URL url = null;
                 try {
-                    url = new URL(sUrl + sContentValues);
+                    url = new URL(sUrl +URLEncoder.encode( sContentValues));
                 } catch (Exception e) {
                     DebugUtils.msg("sendDataToServerTask doInBackground() unable to format url " + sUrl + ", " + e.toString());
                 }

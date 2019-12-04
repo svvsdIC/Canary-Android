@@ -69,13 +69,82 @@
 
 
     </RelativeLayout>
+    <TableLayout android:layout_height="300px" android:layout_width="match_parent">
+        <TableRow>
+           <TextView
+               android:id="@+id/OzoneLabel"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal"
+               android:text="@string/ozone" />
+            <TextView
+                android:id="@+id/Ozone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/no_data_yet" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/MethaneLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/methane" />
+            <TextView
+                android:id="@+id/methane"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/no_data_yet" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/HydrogenLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/hydrogen" />
+            <TextView
+                android:id="@+id/hydrogen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/no_data_yet" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/coLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/co" />
+            <TextView
+                android:id="@+id/co"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/no_data_yet" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/ammoniaLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/ammonia" />
+            <TextView
+                android:id="@+id/ammmonia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/no_data_yet" />
+        </TableRow>
 
-    <TextView
-        android:id="@+id/testfield"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/no_data_yet" />
+
+    </TableLayout>
+
+
 
 
     <ImageView
@@ -84,6 +153,7 @@
         android:layout_height="72dp"
         android:onClick="deleteData"
         android:src="@drawable/delete" />
+
 
 
 

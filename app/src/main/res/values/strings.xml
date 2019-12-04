@@ -6,4 +6,11 @@
     <string name="data_uploaded">data uploaded</string>
     <string name="data_erased">Date erased</string>
     <string name="pick_app_open_data">Pick an app to open the data with</string>
+    <string name="ozone">Ozone:</string>
+    <string name="methane">Methane:</string>
+    <string name="ammonia">Ammonia:</string>
+    <string name="hydrogen">Hydrogen:</string>
+    <string name="co">CarbonMonoxide:</string>
+
+
 </resources>

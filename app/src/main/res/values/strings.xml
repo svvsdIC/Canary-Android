@@ -11,6 +11,13 @@
     <string name="ammonia">Ammonia:</string>
     <string name="hydrogen">Hydrogen:</string>
     <string name="co">CarbonMonoxide:</string>
+    <string name="warnings">Warnings will appear here:</string>
+    <string name="gpsWarn">GPS data is not being received. GPS lock is probably lost </string>
+    <string name="dataWarn">Data is not being received. Have you pressed the start button? </string>
+    <string name="gpsNoWarn">GPS is working </string>
+    <string name="dataNoWarn">Data reception is working </string>
+    <string name="dataWarningExplaination">If the timestamp below is not changing frequently, there is likely a data collection problem. Timestamp of last data below: </string>
+
 
 
 </resources>

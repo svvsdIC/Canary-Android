@@ -106,6 +106,8 @@ public class MainActivity extends AppCompatActivity
         receiver.addMonitor("NH4", (TextView) findViewById(R.id.ammmonia));
         receiver.addMonitor("CO", (TextView) findViewById(R.id.co));
         receiver.addMonitor("CH4", (TextView) findViewById(R.id.methane));
+        receiver.addMonitor("Timestamp",(TextView) findViewById(R.id.dataWarnings));
+
 
 
 
@@ -138,7 +140,22 @@ public class MainActivity extends AppCompatActivity
     ///////////////////////////
     // UI routines
     ///////////////////////////
+    public void checkWarnings(View view)
+    {
+        TextView textView = (TextView) findViewById(R.id.gpsWarnings);
+        //Control the warnings area of the app
+        if (receiver.gpsProblem == 1)
+        {
+            textView.setText(getString(R.string.gpsWarn));
+        }
+        else if (receiver.gpsProblem == 0)
+        {
+            textView.setText(getString(R.string.gpsNoWarn));
+        }
 
+        TextView textView2 = (TextView) findViewById(R.id.gpsWarnings);
+
+    }
     // toggleRecord - turns recording on and off
     public void toggleRecord(View view)
     {

@@ -180,6 +180,78 @@ public class Recorder
     {
         db.update(sTable, contentValues, sWhere, null);
     }
+/**
+    //Some debug routines
+    public void debugTables()
+    {
+
+        msg("debugTables");
+        Cursor query = selectFromTableOrder("sqlite_master","name","type='table'","name");
+        String[] aTables = getQueryResultArray(query, "name");
+
+        for (int t = 0; t < aTables.length; t++)
+        {
+            query = db.rawQuery("select * from " + aTables[t], null);
+            msg(" ");
+            msg("table " + aTables[t] + ", " + query.getCount() + " rows");
+            debugQuery(query);
+            msg(" ");
+        }
+
+    }
+*/
+    public void debugTable(String sTable)
+    {
+        Cursor query = db.rawQuery("select * from " + sTable, null);
+        debugQuery(query);
+
+    }
 
 
+    public void debugQuery(Cursor query)
+    {
+        String sOut = "";
+        String sValue = "";
+        for (int j = 0; j < query.getColumnCount(); j++)
+        {
+            sOut += query.getColumnName(j) + "|";
+        }
+        msg(sOut);
+        for (int i = 0; i < query.getCount(); i++)
+        {
+            query.moveToPosition(i);
+            sOut = "";
+            for (int j = 0; j < query.getColumnCount(); j++)
+            {
+                sValue = query.getString(j);
+                if (sValue != null && sValue.length() > 0)
+                {
+                    sValue = sValue.substring(0,Math.min(24,  sValue.length()));
+                }
+                else
+                {
+                    sValue = "";
+                }
+                sOut += sValue + "|";
+            }
+            msg(sOut);
+        }
+    }
+
+
+
+    public void msg(String sMsg)
+    {
+
+        System.out.println("Canary DataBase: " + sMsg);
+
+    }
+
+    public Cursor selectFromTableOrder(String sTable, String sColumn, String sWhere, String sOrder)
+    {
+//msg("selectFromTableOrder select " + sColumn + " from " + sTable + " where " + sWhere + " order by " + sOrder);
+        Cursor c = db.query(sTable, sColumn.split(","), sWhere, null, null, null, sOrder);
+        c.moveToFirst();
+        return c;
+    }
 }

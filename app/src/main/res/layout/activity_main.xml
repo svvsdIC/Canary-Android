@@ -141,8 +141,38 @@
                 android:text="@string/no_data_yet" />
         </TableRow>
 
-
     </TableLayout>
+    <ImageView
+        android:id="@+id/CheckWarnings"
+        android:layout_width="60dp"
+        android:layout_height="72dp"
+        android:layout_alignParentRight="true"
+        android:onClick="checkWarnings"
+        android:src="@drawable/upload" />
+    <TextView
+        android:id="@+id/warningsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/warnings" />
+    <TextView
+        android:id="@+id/gpsWarnings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/gpsNoWarn" />
+    <TextView
+        android:id="@+id/dataWarningsExplanation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/dataWarningExplaination" />
+    <TextView
+        android:id="@+id/dataWarnings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/dataWarn" />
 
 
 

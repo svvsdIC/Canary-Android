@@ -10,6 +10,7 @@ import android.widget.TextView;
 import com.digi.xbee.api.connection.android.AndroidXBeeInterface;
 
 import java.nio.charset.StandardCharsets;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -52,6 +53,8 @@ public class Receiver
     public int vendorId = 0; //1027;
     public int productId = 0; //24597;
     public ContentValues lastProcessedData = new ContentValues();
+    public int gpsProblem = 0;
+    public Date date = new Date();
 
     private Context context;
 
@@ -165,7 +168,13 @@ public class Receiver
                 textView.setText(lastProcessedData.getAsString(sKey));
 
             }
+            if(sKey.equals("Timestamp"))
+            {
+                textView = monitors.get(sKey);
+                textView.setText(date.toString());
+            }
         }
+
     }
 
 
@@ -176,6 +185,9 @@ public class Receiver
     // processData() - here is where you take the XBee received data string and turn into usable value you can put into the recorder or use for displaying on monitors
     public ContentValues processData(String sData)
     {
+
+        //make timestamp for the last time data was processed
+        date = new Date();
         // TODO: 10/18/18 - Split the received XBee data string into field values.
         //   Field names should be the same as Recorder database column names you want to record the values to
         //   Field names should be the same as the monitor field names for monitoring
@@ -216,11 +228,13 @@ public class Receiver
                     contentValues.put("Latitude", Float.parseFloat(sensorSplit[1]));
                     contentValues.put("Longitude", Float.parseFloat(sensorSplit[2]));
                     contentValues.put("Altitude", Float.parseFloat(sensorSplit[3]));
+                    gpsProblem = 0;
                 }
                 else {
                     contentValues.put("Latitude", "-1");
                     contentValues.put("Longitude", "-1");
                     contentValues.put("Altitude", "-1");
+                    gpsProblem = 1;
                 }
             }
             DebugUtils.msg("contentValues() data parsed is" + contentValues.toString());
